@@ -7,8 +7,7 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-    extends TestCase
+public class AppTest extends TestCase
 {
     /**
      * Create the test case
@@ -18,6 +17,7 @@ public class AppTest
     public AppTest( String testName )
     {
         super( testName );
+    	System.out.println( "Init AppTest" );
     }
 
     /**
@@ -25,6 +25,7 @@ public class AppTest
      */
     public static Test suite()
     {
+    	System.out.println( "Test Suite" );
         return new TestSuite( AppTest.class );
     }
 
@@ -33,6 +34,7 @@ public class AppTest
      */
     public void testApp()
     {
+    	System.out.println( "TestApp" );
         assertTrue( true );
     }
 }
